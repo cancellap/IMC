@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo de IMC</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <section class="container-global">
+
+    <section class="container-text">
+      <p class="title">Cálculo de IMC - O que é isso?</p>
+      <p class="content">
+        O Índice de Massa Corporal (IMC) é uma medida utilizada para avaliar se uma pessoa está dentro do peso ideal
+        em relação à sua altura. Ele é amplamente utilizado como uma ferramenta simples e rápida para identificar
+        possíveis problemas de peso.
+      </p>
+      <p class="content">
+        O IMC é calculado dividindo o peso da pessoa (em quilogramas) pelo quadrado da sua altura (em metros). A fórmula
+        é:
+        <br>
+        IMC = peso / (altura * altura)
+      </p>
+      <p class="content">
+        É importante lembrar que o IMC é uma medida inicial e não leva em conta outros fatores como composição corporal.
+        Recomenda-se consultar um médico para uma avaliação completa e personalizada.
+      </p>
+      <p class="content">
+        Para mais informações sobre IMC e saúde, visite o site da <a class="oms-link"
+          href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank">Organização
+          Mundial da Saúde
+          (OMS)</a>.
+      </p>
+    </section>
+
+    <section class="calculo">
+      <p class="title">Calcule seu IMC</p>
+      <form id="form">
+        <label for="peso">Peso (em kg)</label>
+        <input type="text" id="peso" name="peso" placeholder="Ex: 70.5">
+
+        <label for="altura">Altura (em metros)</label>
+        <input type="text" id="altura" name="altura" placeholder="Ex: 1.80">
+
+        <button type="submit">Calcular IMC</button>
+      </form>
+      <div id="resultado"></div>
+      <p class="content">
+        De acordo com a Organização Mundial da Saúde (OMS), os intervalos de IMC são interpretados da seguinte forma:
+      <ul>
+        <li>Menor que 18,5: Abaixo do peso</li>
+        <li>18,5 a 24,9: Peso normal</li>
+        <li>25 a 29,9: Sobrepeso</li>
+        <li>30 a 34,9: Obesidade grau I</li>
+        <li>35 a 39,9: Obesidade grau II</li>
+        <li>Maior ou igual a 40: Obesidade grau III (mórbida)</li>
+      </ul>
+      </p>
+    </section>
+  </section>
+  <section class="redes-socials">
+    <ul class="wrapper">
+      <li class="icon github">
+        <a href="https://github.com/cancellap" target="_blank" class="social-link">
+          <span class="tooltip">Github</span>
+          <span><i class="fab fa-github"></i></span>
+          <img src="./img/github.png" alt="GitHub">
+        </a>
+      </li>
+      <li class="icon linkedin">
+        <a href="https://www.linkedin.com/in/pedro-cancella/" target="_blank" class="social-link">
+          <span class="tooltip">LinkedIn</span>
+          <span><i class="fab fa-linkedin"></i></span>
+          <img src="./img/linkedin.png" alt="LinkedIn">
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
